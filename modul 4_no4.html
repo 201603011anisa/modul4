@@ -1,0 +1,30 @@
+<html>
+<head>
+    </head>
+<body>
+
+    <script>
+    var Tony={
+        firstname: 'Tony',
+        lastname:'Alice',
+        address: {
+            street:'111 Main St.',
+            city:'New York',
+            state:'NY'
+        }
+    };
+    function greet(person) {
+        console.log('Hi' +person.firstname);
+    }
+    greet(Tony);
+        greet({
+            firstname:'Mary',
+            lastname:'Doe'
+        });
+    Tony.address={
+        street:'333 Second St.'
+    }
+    
+    </script>
+    </body>
+</html>  

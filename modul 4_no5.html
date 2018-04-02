@@ -1,0 +1,92 @@
+<html>
+<head>
+    </head>
+<body>
+    <script>
+    var Pem1 = {T:160, U:22};
+    var Pem2 = {T:165, U:20};
+    var Pem3 = {T:180, U:10};
+    
+        var niUMR1 = Pem1.U*5;
+        var SkorTot1 = niUMR1+Pem1.T;
+        var niUMR2 = Pem2.U*5;
+        var SkorTot2 = niUMR2+Pem2.T;
+        var niUMR3 = Pem3.U*5;
+        var SkorTot3 = niUMR3+Pem2.T;
+        
+        console.log(SkorTot1);
+        console.log(SkorTot2);
+        console.log(SkorTot3);
+        
+        if (SkorTot1>SkorTot2){
+            console.log("Pemain 1 MENANG!!")
+        }
+        else if (SkorTot2>SkorTot1){
+            console.log("Pemain 2 MENANG!!")
+        }
+        else if (SkorTot2=SkorTot1){
+            console.log("Permainan SERI!!")
+        }
+        else {}
+        
+        console.log(" ")
+        console.log(" 3 Pemain ")
+        console.log(" ")
+        
+        if (SkorTot2&&SkorTot3<SkorTot1)
+        {
+            if (SkorTot1==SkorTot2)
+                {
+                   console.log ("Pemain 1 dan 2 MENANG SERI!!")
+                }
+            else if (SkorTot1==SkorTot3)
+                {
+                   console.log ("Pemain 1 dan 3 MENANG SERI!!")
+                }
+            else
+                {
+                    console.log("Pemain 1 MENANG !!")
+                }
+        }
+        
+        else if (SkorTot1&&SkorTot3<SkorTot2)
+        {
+            if (SkorTot2==SkorTot1)
+                {
+                   console.log ("Pemain 2 dan 1 MENANG SERI!!")
+                }
+            else if (SkorTot2==SkorTot3)
+                {
+                   console.log ("Pemain 2 dan 3 MENANG SERI!!")
+                }
+            else
+                {
+                    console.log("Pemain 2 MENANG !!")
+                }
+        }
+        
+        else if (SkorTot1&&SkorTot2<SkorTot3)
+        {
+            if (SkorTot3==SkorTot1)
+                {
+                   console.log ("Pemain 3 dan 1 MENANG SERI!!")
+                }
+            else if (SkorTot3==SkorTot1)
+                {
+                   console.log ("Pemain 3 dan 1 MENANG SERI!!")
+                }
+            else
+                {
+                    console.log("Pemain 3 MENANG !!")
+                }
+        }
+        
+         else if (SkorTot1&&SkorTot2<SkorTot3)
+        {
+            console.log("Ketiga Pemain Seri")
+        }
+            
+         else{}
+    </script>
+    </body>
+</html>
